@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Register for an Account</title></head>
+<body>
+<h1>
+Create a username and password to register for an account.
+</h1>
+<form name = "input" action = "register.php" method="POST">
+<label for="userinput">Username:</label>
+<input type="text" name="username" id="userinput"/>
+<label for ="passinput">Password:</label>
+<input type="password" name="password" id="passinput"/>
+<input type="hidden" name="token" value="<?php echo $_SESSION['token'];?>" />
+<input type = "submit" value="Submit" />
+</form>
+
+</body>
+</html>
